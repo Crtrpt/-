@@ -1,0 +1,95 @@
+{
+  "name": "trifoliate",
+  "version": "0.0.2",
+  "description": "trifoliate editor",
+  "main": "index.js",
+  "scripts": {
+    "dev": "rollup --config  rollup.config.js  --watch",
+    "build": "rollup --config rollup.build.config.js",
+    "test": "jest",
+    "electron": "electron .",
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Crtrpt/trifoliate.git"
+  },
+  "author": "jingdor",
+  "license": "Apache",
+  "bugs": {
+    "url": "https://github.com/Crtrpt/trifoliate/issues"
+  },
+  "homepage": "https://github.com/Crtrpt/trifoliate#readme",
+  "devDependencies": {
+    "@babel/core": "^7.13.15",
+    "@babel/preset-env": "^7.13.15",
+    "@babel/preset-typescript": "^7.14.5",
+    "@electron-forge/cli": "^6.0.0-beta.57",
+    "@electron-forge/maker-deb": "^6.0.0-beta.57",
+    "@electron-forge/maker-rpm": "^6.0.0-beta.57",
+    "@electron-forge/maker-squirrel": "^6.0.0-beta.57",
+    "@electron-forge/maker-zip": "^6.0.0-beta.57",
+    "@riotjs/compiler": "^5.4.2",
+    "@rollup/plugin-babel": "^5.3.0",
+    "@rollup/plugin-commonjs": "^19.0.0",
+    "@rollup/plugin-dynamic-import-vars": "^1.1.1",
+    "@rollup/plugin-image": "^2.0.6",
+    "@rollup/plugin-multi-entry": "^4.0.0",
+    "@rollup/plugin-node-resolve": "^11.2.1",
+    "@rollup/plugin-replace": "^2.4.2",
+    "@rollup/plugin-typescript": "^8.2.1",
+    "@rollup/plugin-wasm": "^5.1.2",
+    "@types/jest": "^26.0.23",
+    "@types/lodash": "^4.14.171",
+    "electron": "13.1.6",
+    "jest": "^27.0.4",
+    "node-sass": "^6.0.0",
+    "rollup": "^2.44.0",
+    "rollup-plugin-livereload": "^2.0.0",
+    "rollup-plugin-riot": "^5.0.0",
+    "rollup-plugin-scss": "^2.6.1",
+    "rollup-plugin-serve": "^1.1.0",
+    "rollup-plugin-sourcemaps": "^0.6.3",
+    "rollup-plugin-typescript2": "^0.30.0",
+    "rollup-plugin-uglify": "^6.0.4",
+    "tslib": "^2.2.0",
+    "typescript": "^4.2.4"
+  },
+  "dependencies": {
+    "@types/echarts": "^4.9.8",
+    "echarts": "^5.1.2",
+    "electron-squirrel-startup": "^1.0.0",
+    "lodash": "^4.17.21",
+    "miragejs": "^0.1.41",
+    "riot": "^5.4.5"
+  },
+  "config": {
+    "forge": {
+      "packagerConfig": {},
+      "makers": [
+        {
+          "name": "@electron-forge/maker-squirrel",
+          "config": {
+            "name": "trifoliate"
+          }
+        },
+        {
+          "name": "@electron-forge/maker-zip",
+          "platforms": [
+            "darwin"
+          ]
+        },
+        {
+          "name": "@electron-forge/maker-deb",
+          "config": {}
+        },
+        {
+          "name": "@electron-forge/maker-rpm",
+          "config": {}
+        }
+      ]
+    }
+  }
+}
