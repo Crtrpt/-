@@ -15,7 +15,8 @@ docker pull shorebf
 
 ## 如何开发
 了解 shorebf怎么工作
-修改 shorebf的bug ,
+修改 shorebf的bug 
+给 shorebf开发新的功能
 
 ### 基础技能
 - typescript
@@ -30,7 +31,9 @@ npm run dev
 ```
 cd app && npm run start
 ```
-
+### 感谢相关开源项目
+- nest
+- uikit
 
 # 授权
 本项目gpl授权

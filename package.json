@@ -35,6 +35,8 @@
     "jest": "^27.0.4",
     "node-sass": "^6.0.0",
     "rollup": "^2.44.0",
+    "@riotjs/compiler": "^5.4.2",
+    "rollup-plugin-riot": "^5.0.0",
     "rollup-plugin-livereload": "^2.0.0",
     "rollup-plugin-scss": "^2.6.1",
     "rollup-plugin-serve": "^1.1.0",
@@ -42,7 +44,8 @@
     "rollup-plugin-typescript2": "^0.30.0",
     "rollup-plugin-uglify": "^6.0.4",
     "tslib": "^2.2.0",
-    "typescript": "^4.2.4"
+    "typescript": "^4.2.4",
+    "riot": "^5.4.5"
   },
   "dependencies": {
     "@types/echarts": "^4.9.8",
