@@ -33,10 +33,7 @@ export default {
     wasm(),
     image(),
     // multi(),
-    replace({
-      preventAssignment:true,
-      'process.env.NODE_ENV': JSON.stringify(env)
-    }),
+
     scss(
       {
         output: 'public/css/bundle.css',
@@ -55,6 +52,10 @@ export default {
     livereload("public"),
     resolve(),
     babel({ babelHelpers: 'bundled' }),
+    replace({
+      preventAssignment:true,
+      'process.env.NODE_ENV': JSON.stringify(env)
+    }),
     dynamicImportVars({
     }),
     
