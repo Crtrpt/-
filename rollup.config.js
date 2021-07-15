@@ -12,7 +12,6 @@ import image from '@rollup/plugin-image';
 import { wasm } from '@rollup/plugin-wasm';
 import dynamicImportVars from '@rollup/plugin-dynamic-import-vars';
 import commonjs from '@rollup/plugin-commonjs';
-import riot from 'rollup-plugin-riot'
 
 const env = process.env.NODE_ENV
 
@@ -26,12 +25,11 @@ export default {
       // file: 'example/js/bundle.js',
       dir: "public/js/module",
       format:"es",
-      name:"trifoliate"
+      name:"shorebf"
     }
   ],
   plugins: [
     commonjs(),
-    riot(),
     wasm(),
     image(),
     // multi(),

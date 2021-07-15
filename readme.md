@@ -32,8 +32,9 @@ npm run dev
 cd app && npm run start
 ```
 ### 感谢相关开源项目
-- nest
-- uikit
+- mithril (前端框架)
+- nest (后端框架)
+- uikit (ui框架)
 
 # 授权
 本项目gpl授权

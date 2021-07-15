@@ -1,6 +1,12 @@
 import './index.scss'
+
+
+
+import m  from "mithril";
+
+
 export default class shorebf {
-    constructor(){
-        console.log("初始化")
+    constructor(config:any){
+        m.render(config.el,"hello shorebf")
     }
 }
