@@ -1,0 +1,19 @@
+.login_page {
+  .title {
+    font-size: 40px;
+    margin: 10px 0px;
+    padding: 10px;
+  }
+  .input_box {
+    display: flex;
+    padding: 10px;
+    .label {
+      font-size: 22px;
+      width: 100px;
+    }
+    .input {
+      padding: 4px;
+      font-size: 20px;
+    }
+  }
+}

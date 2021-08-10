@@ -4,7 +4,8 @@
   "description": "pms",
   "main": "index.js",
   "scripts": {
-    "dev": "rollup --config  rollup.config.js  --watch",
+    "f": "rollup --config  rollup.config.js  --watch",
+    "b": "cd app &&   npm run start:dev",
     "test": "jest"
   },
   "repository": {
