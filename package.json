@@ -1,11 +1,11 @@
 {
-  "name": "shorebf",
+  "name": "dystopia",
   "version": "0.0.1",
-  "description": "pms",
+  "description": "dystopia",
   "main": "index.js",
   "scripts": {
-    "f": "rollup --config  rollup.config.js  --watch",
-    "b": "cd app &&   npm run start:dev",
+    "start:dev": "rollup --config  rollup.config.js  --watch",
+    "start:test": "rollup --config  rollup.config.js ",
     "test": "jest"
   },
   "repository": {
