@@ -5,7 +5,7 @@ import m  from "mithril";
 
 import route from './route';
 
-export default class shorebf {
+export default class dystopia {
     constructor(config:any){
         var root=config.el;
         m.route(root,"/",route)
