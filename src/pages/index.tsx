@@ -8,8 +8,11 @@ class Index implements ClassComponent {
     ): void | m.Children {
       return (
         <Master>
-          <a href="#!/login">
+          <a href="#!/login" >
             首页
+            <button className="bg-gray-400">
+              button
+            </button>
           </a>
         </Master>
       )

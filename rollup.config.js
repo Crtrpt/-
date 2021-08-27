@@ -13,6 +13,7 @@ import { wasm } from '@rollup/plugin-wasm';
 import dynamicImportVars from '@rollup/plugin-dynamic-import-vars';
 import commonjs from '@rollup/plugin-commonjs';
 
+
 const env = process.env.NODE_ENV
 
 export default {
@@ -25,7 +26,7 @@ export default {
       // file: 'example/js/bundle.js',
       dir: "public/js/module",
       format:"es",
-      name:"shorebf"
+      name:"dystopia"
     }
   ],
   plugins: [
