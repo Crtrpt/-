@@ -106,3 +106,4 @@ dist
 /out
 /public/css
 /public/js
+/public/tailwindcss.css
